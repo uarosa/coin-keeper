@@ -1,0 +1,51 @@
+<div class="navbarContainer">
+
+  <div class="sidebarContainer"
+   (click)="popupOne()">
+      <i class="fas fa-align-justify"></i>
+  </div>
+
+  <div class="infoContainer">
+      <div>
+          <div class="infoItemContainer">
+             <div>
+                <i class="fas fa-id-card"></i>
+             </div>
+              <div>
+                 <span>USER:{{name_surname}}</span>
+             </div>
+          </div>
+          <div class="infoItemContainer">
+              <div>
+                 <i class="far fa-money-bill-alt"></i>
+             </div>
+              <div>
+                 <span>BALANCE:{{balance}}</span>
+             </div>
+          </div>
+          <div class="infoItemContainer">
+              <div>
+                 <i class="fab fa-cc-amazon-pay"></i>
+             </div>
+              <div>
+                 <span>EXPENSES:{{expences}}</span>
+             </div>
+          </div>
+          <div class="infoItemContainer">
+              <div>
+                 <i class="far fa-calendar-alt"></i>
+             </div>
+              <div>
+                 <span>DATE:{{date}}</span>
+             </div>
+          </div>
+      </div>
+
+
+      <div id="logoutContainer"
+            (click)="logout()">
+          <i class="fas fa-power-off"></i>
+      </div>
+  </div>
+
+</div>

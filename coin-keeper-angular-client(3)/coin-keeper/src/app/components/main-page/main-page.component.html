@@ -1,0 +1,11 @@
+<div class="app-main">
+   <div class="app-category-comentary-saving"><span>Saving</span></div>
+   <div class="app-category-comentary-spends"><span>Spends</span></div>
+   
+   <div class="app-container" *ngFor="let categories of category">
+        <div class="app-category" *ngFor="let categoryIcon of categories">
+          <app-category-page [categoryIcon]="categoryIcon"></app-category-page>
+        </div>
+      <div class="app-create"></div>
+    </div>
+</div>
